@@ -1,0 +1,16 @@
+spring:
+  #cache:
+    #type: redis
+    #host: localhost
+    #port: 6379
+    #redis:
+    #  time-to-live: 60000
+  datasource:
+    url: jdbc:postgresql://localhost:5432/inventory
+    username: postgres
+    password: admin
+    driver: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
